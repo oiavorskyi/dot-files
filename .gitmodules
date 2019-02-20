@@ -1,0 +1,3 @@
+[submodule "git/git-hooks-core"]
+	path = git/git-hooks-core
+	url = https://github.com/pivotal-cf/git-hooks-core
