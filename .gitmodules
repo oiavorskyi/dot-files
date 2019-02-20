@@ -1,3 +1,24 @@
 [submodule "git/git-hooks-core"]
 	path = git/git-hooks-core
 	url = https://github.com/pivotal-cf/git-hooks-core
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/bundle/vim-schlepp"]
+	path = vim/.vim/bundle/vim-schlepp
+	url = https://github.com/zirrostig/vim-schlepp.git
+[submodule "vim/.vim/bundle/vim-sensible"]
+	path = vim/.vim/bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "vim/.vim/bundle/vim-tmux-navigator"]
+	path = vim/.vim/bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "vim/.vim/bundle/vim-togglecursor"]
+	path = vim/.vim/bundle/vim-togglecursor
+	url = https://github.com/jszakmeister/vim-togglecursor.git
+[submodule "vim/.vim/bundle/vim8-bracketed-paste-mode-tmux"]
+	path = vim/.vim/bundle/vim8-bracketed-paste-mode-tmux
+	url = https://github.com/chrisjohnson/vim8-bracketed-paste-mode-tmux.git
+[submodule "vim/.vim/bundle/vim-colors-solarized"]
+	path = vim/.vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

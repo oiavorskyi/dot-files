@@ -26,3 +26,7 @@ ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 link_config "/fish/.config/fish/functions" "/.config/fish/functions"
 link_config "/fish/.config/fish/completions" "/.config/fish/completions"
 link_config "/fish/.config/fish/config.fish" "/.config/fish/config.fish"
+
+# Setup Vim
+link_config "/vim/.vimrc" "/.vimrc"
+link_config "/vim/.vim" "/.vim"
