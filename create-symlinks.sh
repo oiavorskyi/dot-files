@@ -30,3 +30,5 @@ link_config "/fish/.config/fish/config.fish" "/.config/fish/config.fish"
 # Setup Vim
 link_config "/vim/.vimrc" "/.vimrc"
 link_config "/vim/.vim" "/.vim"
+
+link_config "/intellij-idea/.ideavimrc" "/.ideavimrc"

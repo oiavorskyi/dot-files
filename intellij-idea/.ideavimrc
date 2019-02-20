@@ -1,0 +1,4 @@
+source ~/.vim/vimrcs/shared_keys.vim
+
+" Remap Idea keys to use together with Vim ones
+"nnoremap <C-W> :action EditorSelectWord<CR>
