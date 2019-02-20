@@ -15,3 +15,8 @@ link_config "/git/.gitconfig" "/.gitconfig"
 git config --global --replace-all core.hooksPath "${dotfiles_dir}/git/git-hooks-core"
 
 link_config "/httpie/.httpie" "/.httpie"
+
+# Setup Tmux
+link_config "/tmux/.tmux.conf" "/.tmux.conf"
+[ ! -d ${HOME}/.tmux/plugins/tpm ] && git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
+${HOME}/.tmux/plugins/tpm/bin/install_plugins
