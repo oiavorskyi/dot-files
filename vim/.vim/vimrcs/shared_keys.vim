@@ -12,9 +12,6 @@ let g:mapleader = ";"
 " Trick to enable double leader usage
 map ;; <leader><leader>
 
-" Quick exit to NORMAL mode
-inoremap ii <ESC>
-
 " Quick save of the buffer
 nmap <leader>w :w<cr>
 
