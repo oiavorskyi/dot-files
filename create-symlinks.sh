@@ -14,6 +14,7 @@ link_config "/LaunchBar/Actions" "/Library/Application Support/LaunchBar/Actions
 # Setup Git configuration
 link_config "/git/.gitconfig" "/.gitconfig"
 git config --global --replace-all core.hooksPath "${dotfiles_dir}/git/git-hooks-core"
+git config --global --replace-all commit.template "${dotfiles_dir}/git/.gitmessage"
 
 link_config "/httpie/.httpie" "/.httpie"
 
