@@ -58,7 +58,7 @@
 	gpgsign = true
 	template = /Users/oiavorskyi/workspace/dot-files/git/.gitmessage
 [pull]
-	rebase = preserve
+	rebase = merges
 [rerere]
 	enabled = true
 [color]
