@@ -1,4 +1,5 @@
 source ~/.vim/vimrcs/shared_keys.vim
+set easymotion
 
 " Remap Idea keys to use together with Vim ones
 "nnoremap <C-W> :action EditorSelectWord<CR>

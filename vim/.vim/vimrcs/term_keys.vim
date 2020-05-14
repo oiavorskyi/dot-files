@@ -23,16 +23,16 @@ let myvimrt = fnamemodify(expand(split(&rtp, ',')[0] . "/vimrcs/"), ":p:h")
 " <leader>ev opens new split with .vimrc for edit
 nnoremap <silent> <leader>ev :vsplit $MYVIMRC<cr>
 
-" <leader>ebv opens new split with base Vim configuration for edit
+" <leader>eb opens new split with base Vim configuration for edit
 nnoremap <silent> <leader>eb :vsplit <C-r>=myvimrt . "/base.vim"<cr><cr>
 
-" <leader>esv opens new split with shared key mappings for edit
+" <leader>es opens new split with shared key mappings for edit
 nnoremap <silent> <leader>es :vsplit <C-r>=myvimrt . "/shared_keys.vim"<cr><cr>
 
-" <leader>esv opens new split with terminal Vim key mappings for edit
+" <leader>et opens new split with terminal Vim key mappings for edit
 nnoremap <silent> <leader>et :vsplit <C-r>=myvimrt . "/term_keys.vim"<cr><cr>
 
-" <leader>esv opens new split with terminal UI configuration for edit
+" <leader>eu opens new split with terminal UI configuration for edit
 nnoremap <silent> <leader>eu :vsplit <C-r>=myvimrt . "/ui.vim"<cr><cr>
 
 " <leader>sv reloads the .vimrc file
