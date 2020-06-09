@@ -9,7 +9,9 @@ function link_config() {
 	ln -sfFnv "${source_dir}" "${dest_dir}"
 }
 
+# Setup Launchbar
 link_config "/LaunchBar/Actions" "/Library/Application Support/LaunchBar/Actions"
+link_config "/LaunchBar/Configuration.plist" "/Library/Application Support/LaunchBar/Configuration.plist"
 
 # Setup Git configuration
 link_config "/git/.gitconfig" "/.gitconfig"
@@ -32,4 +34,4 @@ link_config "/fish/.config/fish/config.fish" "/.config/fish/config.fish"
 link_config "/vim/.vimrc" "/.vimrc"
 link_config "/vim/.vim" "/.vim"
 
-link_config "/intellij-idea/.ideavimrc" "/.ideavimrc"
+#link_config "/intellij-idea/.ideavimrc" "/.ideavimrc"
