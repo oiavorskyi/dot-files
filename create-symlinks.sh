@@ -1,5 +1,7 @@
 #!/bin/bash
 
+which greadlink 2>&1 > /dev/null || (echo "Cannot found grealink utility. Install with brew install coreutils"; exit 1)
+
 dotfiles_dir=$(dirname "$(greadlink -f "$0" || readlink -f "$0")")
 
 function link_config() {
@@ -34,4 +36,4 @@ link_config "/fish/.config/fish/config.fish" "/.config/fish/config.fish"
 link_config "/vim/.vimrc" "/.vimrc"
 link_config "/vim/.vim" "/.vim"
 
-#link_config "/intellij-idea/.ideavimrc" "/.ideavimrc"
+link_config "/intellij-idea/.ideavimrc" "/.ideavimrc"
