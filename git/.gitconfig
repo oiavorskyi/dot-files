@@ -1,6 +1,7 @@
 [core]
 	editor = /usr/local/bin/vim
 	hooksPath = /Users/oiavorskyi/workspace/dot-files/git/git-hooks-core
+	autocrlf = input
 [transfer]
 	fsckobjects = true
 [alias]
@@ -71,3 +72,5 @@
 	new = green bold
 [diff]
 	wordRegex = .
+[init]
+	defaultBranch = main
