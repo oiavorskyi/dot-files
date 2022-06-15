@@ -1,6 +1,6 @@
 #!/bin/bash
 
-which greadlink 2>&1 > /dev/null || (echo "Cannot found grealink utility. Install with brew install coreutils"; exit 1)
+which greadlink 2>&1 > /dev/null || (echo "Cannot found greadlink utility. Install with brew install coreutils"; exit 1)
 
 dotfiles_dir=$(dirname "$(greadlink -f "$0" || readlink -f "$0")")
 
@@ -37,3 +37,6 @@ link_config "/vim/.vimrc" "/.vimrc"
 link_config "/vim/.vim" "/.vim"
 
 link_config "/intellij-idea/.ideavimrc" "/.ideavimrc"
+
+# Setup iTerm
+link_config "/iTerm2/com.googlecode.iterm2.plist" "/Library/Preferences/com.googlecode.iterm2.plist"
