@@ -4,6 +4,11 @@ set -gx PATH $HOME/.cargo/bin $PATH
 java11 &> /dev/null
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
+# Configure Go env
+set -x GOPATH $HOME/go
+set -x GOROOT (brew --prefix golang)/libexec
+set -gx PATH $PATH $GOPATH/bin $GOROOT/bin
+
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
     curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
