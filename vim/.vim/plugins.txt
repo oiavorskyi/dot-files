@@ -1,11 +1,9 @@
 List of installed plugins:
 
-pathogen.vim		// easy loading of Vim plugins from "bundle" directory
 vim-sensible		// provides sensible defaults for Vim settings
 vim-togglecursor	// change shape of cursor in different modes in terminal
 vim-tmux-navigator  // enable seamless switching between panes in Tmux and Vim
-vim8-bracketed-paste-mode-tmux	// adds support for bracketed paste mode for tmux 2.5
+vim8-bracketed-paste-mode-tmux	// adds support for bracketed paste mode for tmux 2.5+
 
 Quaranteen plugins:
-vim-schlepp         // enables movement and duplication of visual blocks
 nerdtree		// enables directory navigation

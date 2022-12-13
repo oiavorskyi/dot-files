@@ -1,3 +1,4 @@
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings actual for teminal version of Vim only.
 " Includes mappings for plugins as well
@@ -18,7 +19,7 @@ endif
 " => Fast editing and reloading of vimrc configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Path to the vimrcs directory under local vim config directory 
-let myvimrt = fnamemodify(expand(split(&rtp, ',')[0] . "/vimrcs/"), ":p:h")
+let myvimrt = fnamemodify(expand(split(&rtp, ',')[0] . "/vimrc/"), ":p:h")
 
 " <leader>ev opens new split with .vimrc for edit
 nnoremap <silent> <leader>ev :vsplit $MYVIMRC<cr>
@@ -52,12 +53,6 @@ nnoremap <silent> <C-p> :bprev<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text editing
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Move and duplicate visual blocks of text
-" Requires vim-schlepp plugin
-vmap <C-up>   <Plug>SchleppIndentUp
-vmap <C-down> <Plug>SchleppIndentDown
-vmap D <Plug>SchleppDup
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Command line enhancements and commands
