@@ -6,7 +6,7 @@
 fish_config theme choose Dracula
 
 ###################################
-### Setup environment variables ###
+### Setup environment and tools ###
 ###################################
 
 # Setup Go environment
@@ -22,26 +22,24 @@ set fish_add_path $GOPATH/bin $GOROOT/bin
 # Add my scripts to PATH
 fish_add_path $HOME/.local/bin
 
-#####################################
-
 # Required to make GPG signatures work
-#set -x GPG_TTY (tty)
-#java11 &> /dev/null
-
+set -x GPG_TTY (tty)
 
 # ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
-# To link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded) add the following
-# to your ~/.config/fish/config.fish:
-#export RUBY_CONFIGURE_OPTS="--with-openssl-dir=(brew --prefix openssl@1.1)"
+# This links Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=(brew --prefix openssl@1.1)"
 
+# Enable integration between iTerm/Fish/Tmux as per 
+# https://gitlab.com/gnachman/iterm2/-/wikis/tmux-Integration-Best-Practices
+export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
+
+###############
+### Aliases ###
+###############
+
+# For K8s
 abbr k kubectl
 abbr kg kubectl get
 abbr kga kubectl get all
 abbr kgp kubectl get pods
 abbr kaf kubectl apply -f
-
-abbr mk minikube kubectl
-abbr mkg minikube kubectl get
-abbr mkga minikube kubectl get all
-abbr mkgp minikube kubectl get pods
-abbr mkaf minikube kubectl apply -f
