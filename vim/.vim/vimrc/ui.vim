@@ -3,6 +3,9 @@
 " console only
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Select preferred color scheme
+colorscheme dracula
+
 " Enable syntax highlighting
 syntax enable
 
@@ -18,11 +21,10 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
-" Select preferred color scheme
-try
-    colorscheme solarized
-    let g:solarized_termtrans = 1
-    let g:solarized_termcolors=16
+"try
+"    colorscheme dracula
+"    let g:solarized_termtrans = 1
+"    let g:solarized_termcolors=16
 "    let g:solarized_visibility = "high"
 "    let g:solarized_contrast = "high"
 "    let g:zenburn_transparent = 1
@@ -31,6 +33,6 @@ try
 "    let g:zenburn_alternate_Visual = 1
 "    let g:zenburn_unified_CursorColumn = 1
 "    let g:zenburn_old_Visual = 1
-catch
-endtry
-set background=dark
+"catch
+"endtry
+"set background=dark
