@@ -1,0 +1,79 @@
+Formulaes (brew leaves | xargs brew desc --eval-all)
+
+aws-sam-cli: AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
+awscli: Official Amazon AWS command-line interface
+azure-cli: Microsoft Azure CLI 2.0
+bat: Clone of cat(1) with syntax highlighting and Git integration
+coreutils: GNU File, Shell, and Text utilities
+k9s: Kubernetes CLI To Manage Your Clusters In Style!
+popeye: A Kubernetes Cluster sanitizer and linter.
+direnv: Load/unload environment variables based on $PWD
+dive: Tool for exploring each layer in a docker image
+eslint: AST-based pattern checker for JavaScript
+kpoof: Quick k8s pod port-forward utility
+musl-cross: Linux cross compilers based on musl libc
+fish: User-friendly command-line shell for UNIX-like operating systems
+fzf: Command-line fuzzy finder written in Go
+gcc: GNU compiler collection
+git: Distributed revision control system
+gnu-sed: GNU implementation of the famous stream editor
+gnupg: GNU Pretty Good Privacy (PGP) package
+golangci-lint: Fast linters runner for Go
+kpt: Toolkit to manage,and apply Kubernetes Resource config data files
+grc: Colorize logfiles and command output
+htop: Improved top (interactive process viewer)
+httpie: User-friendly cURL replacement (command-line HTTP client)
+jq: Lightweight and flexible command-line JSON processor
+kind: Run local Kubernetes cluster in Docker
+kubectx: Tool that can switch between kubectl contexts easily and create aliases
+kubeseal: Kubernetes controller and tool for one-way encrypted Secrets
+kustomize: Template-free customization of Kubernetes YAML manifests
+lnav: Curses-based tool for viewing and analyzing log files
+mackup: Keep your Mac's application settings in sync
+make: Utility for directing compilation
+ncdu: NCurses Disk Usage
+nmap: Port scanning utility for large networks
+peco: Simplistic interactive filtering tool
+pinentry-mac: Pinentry for GPG on Mac
+python@3.9: Interpreted, interactive, object-oriented programming language
+rbenv: Ruby version manager
+ripgrep: Search tool like grep and The Silver Searcher
+shellcheck: Static analysis and lint tool, for (ba)sh scripts
+stern: Tail multiple Kubernetes pods & their containers
+the_silver_searcher: Code-search similar to ack
+tig: Text interface for Git repositories
+tmux: Terminal multiplexer
+tree: Display directories as trees (with optional color/HTML output)
+vim: Vi 'workalike' with many additional features
+imgpkg: Imgpkg
+kapp: Kapp
+kbld: Kbld
+kwt: Kubernetes Workstation Tools
+vendir: Vendir
+ytt: Ytt
+watch: Executes a program periodically, showing output fullscreen
+wget: Internet file retriever
+yq: Process YAML, JSON, XML, CSV and properties documents from the CLI
+exa: Modern replacement for 'ls'
+gh: GitHub command-line tool
+git-delta: Syntax-highlighting pager for git and diff output
+gnu-tar: GNU version of the tar archiving utility
+go: Open source programming language to build simple/reliable/efficient software
+mas: Mac App Store command-line interface
+mkcert: Simple tool to make locally trusted development certificates
+pv: Monitor data's progress through a pipe
+youtube-dl: Download YouTube videos from the command-line
+docker: Pack, ship and run any application as a lightweight container
+
+Casks (brew list --cask | xargs brew desc --eval-all)
+
+1password
+1password-cli: (1Password CLI) Command-line helper for the 1Password password manager
+font-firamono-nerd-font-mono: (FuraMono Nerd Font (FiraMono)) [no description]
+intellij-idea: (IntelliJ IDEA Ultimate) Java IDE by JetBrains
+iterm2: (iTerm2) Terminal emulator as alternative to Apple's Terminal app
+launchbar: (LaunchBar) Productivity tool
+skype: (Skype) Video chat, voice call and instant messaging application
+jetbrains-toolbox: (JetBrains Toolbox) JetBrains tools manager
+visual-studio-code: (Microsoft Visual Studio Code, VS Code) Open-source code editor
+textexpander
