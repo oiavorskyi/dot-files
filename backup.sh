@@ -28,4 +28,7 @@ link_config mackup/.mackup.backup.public.cfg .mackup.cfg
 
 # perform the backup of public configuration
 echo "Backing up public configuration"
-mackup --dry-run --verbose backup
+mackup --verbose --force backup
+
+# putting public files back to avoid linking issues
+mackup --verbose --force uninstall
