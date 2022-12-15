@@ -43,3 +43,7 @@ mackup --verbose --force backup
 
 # putting sensitive files back to avoid linking issues
 mackup --verbose --force uninstall
+
+# archive sensitive settings to simplify transfer
+echo "Packing sensitive configuration to sensitive-preferences-backup.tgz"
+tar -czf sensitive-preferences-backup.tgz sensitive && rm -rf sensitive
