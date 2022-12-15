@@ -32,3 +32,14 @@ mackup --verbose --force backup
 
 # putting public files back to avoid linking issues
 mackup --verbose --force uninstall
+
+# use sensitive mackup configuration
+echo "Preparing to backup sensitive configuration"
+link_config mackup/.mackup.backup.sensitive.cfg .mackup.cfg
+
+# perform the backup of sensitive configuration
+echo "Backing up sensitive configuration"
+mackup --verbose --force backup
+
+# putting sensitive files back to avoid linking issues
+mackup --verbose --force uninstall
