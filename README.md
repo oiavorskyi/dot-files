@@ -16,9 +16,9 @@ sensitive/ - contains all configuration backups that should not be stored in Git
 merged/ - contains merged copies from dot-files, serves as a basis for restoring on a machine
 
 mackup/ - contains configuration for mackup
-    .mackup.backup.public - configuration used only to backup the public settings
-    .mackup.backup.sensitive - configuration used only to backup the sensitive settings
-    .mackup.restore - configuration used only to restore settings (merged)
+    .mackup.backup.public.cfg - configuration used only to backup the public settings
+    .mackup.backup.sensitive.cfg - configuration used only to backup the sensitive settings
+    .mackup.restore.merged.cfg - configuration used only to restore settings (merged)
     .mackup/ - contains definitions of apps not supported by mackup out of the box
 
 backup.sh - script to backup settings from a machine
