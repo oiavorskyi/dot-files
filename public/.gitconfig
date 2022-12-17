@@ -1,6 +1,7 @@
 [core]
 	editor = /usr/local/bin/vim
 	autocrlf = input
+	pager = delta
 [transfer]
 	fsckobjects = true
 [alias]
@@ -53,9 +54,6 @@
 [user]
 	name = Oleg Iavorskyi
 	email = oleg.iavorskyi@gmail.com
-	signingkey = 0212056229C0E791
-[commit]
-	gpgsign = true
 [pull]
 	rebase = merges
 [rerere]
@@ -70,5 +68,13 @@
 	new = green bold
 [diff]
 	wordRegex = .
+	colorMoved = default
 [init]
 	defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = false      # set to true if you're in a terminal w/ a light background
+[merge]
+  conflictstyle = diff3
