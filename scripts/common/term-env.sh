@@ -40,4 +40,4 @@ brew_install git
 brew_install git-delta
 
 # Installing mackup to manage backup and restore of configuration
-brew install mackup
+brew_install mackup
