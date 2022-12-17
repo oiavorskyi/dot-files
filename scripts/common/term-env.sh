@@ -39,5 +39,12 @@ brew_install vim
 brew_install git
 brew_install git-delta
 
+echo
+echo "Restore public configuration files"
+
 # Installing mackup to manage backup and restore of configuration
 brew_install mackup
+
+# Restoring files
+source $MY_DIR/scripts/common/restore-public.sh
+
