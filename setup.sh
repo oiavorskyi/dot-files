@@ -15,10 +15,14 @@ export HOMEBREW_NO_ANALYTICS=1
 
 # Note: Homebrew needs to be set up first
 source ${MY_DIR}/scripts/common/homebrew.sh
+source ${MY_DIR}/scripts/helpers/brew-install.sh
 
-# next steps
-# at this stage the machine is empty
-# install common CLI tools
+# Install and configure Fish shell for current user
+# Note: to continue setup new terminal session will be required
+source ${MY_DIR}/scripts/common/fish.sh
+
+# configure basic terminal environment
+source ${MY_DIR}/scripts/common/term-env.sh
 
 # Install everything else
 #source ${MY_DIR}/scripts/common/editors.sh

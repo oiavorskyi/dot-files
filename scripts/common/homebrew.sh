@@ -9,8 +9,10 @@ else
   if which brew; then
       echo "Homebrew install verified"
   else
-      echo "It seems Homebre installation has failed and it can't be found. Install it manually or update your PATH before continuing"
-      exit 1
+      echo "Updating PATH in zsh to include Homebrew binaries"
+			echo '# Set PATH, MANPATH, etc., for Homebrew.' >> ~/.zprofile
+    	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    	eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 fi
 
