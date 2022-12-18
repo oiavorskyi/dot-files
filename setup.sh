@@ -12,6 +12,7 @@ clear
 
 MY_DIR="$(dirname "$0")"
 export HOMEBREW_NO_ANALYTICS=1
+source ${MY_DIR}/scripts/helpers/brew-install.sh
 
 function base_env_configured {
     [ -f $MY_DIR/.base-install.completed ]
@@ -29,7 +30,6 @@ function configure_base_terminal_env {
 
     # Note: Homebrew needs to be set up first
     source ${MY_DIR}/scripts/common/homebrew.sh
-    source ${MY_DIR}/scripts/helpers/brew-install.sh
     
     # Install and configure Fish shell for current user
     # Note: to continue setup new terminal session will be required
