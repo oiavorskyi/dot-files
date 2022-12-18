@@ -17,7 +17,7 @@ if test ! -d $GOROOT
     echo "Update config.fish with the correct path to avoid calling brew to resolve it each time the configuration is sourced."
     set -x GOROOT (brew --prefix golang)/libexec
 end
-set fish_add_path $GOPATH/bin $GOROOT/bin
+fish_add_path $GOPATH/bin $GOROOT/bin
 
 # Add my scripts to PATH
 fish_add_path $HOME/.local/bin

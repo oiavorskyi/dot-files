@@ -29,12 +29,6 @@ brew_install make                # Utility for directing compilation
 brew_install shellcheck          # Static analysis and lint tool, for (ba)sh scripts
 
 echo
-echo "Installing Go tools"
-
-brew_install go            # Open source programming language to build simple/reliable/efficient software
-brew_install golangci-lint # Fast linters runner for Go
-
-echo
 echo "Installing Container/Cloud/K8s tools"
 brew_install docker --cask # Pack, ship and run any application as a lightweight container
 brew_install kubectl       # Kubernetes
