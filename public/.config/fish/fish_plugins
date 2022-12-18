@@ -1,11 +1,8 @@
 jorgebucaran/fisher
-jethrokuan/z
-evanlucas/fish-kubectl-completions
-reitzig/sdkman-for-fish
-jhillyerd/plugin-git
-oh-my-fish/plugin-bang-bang
-vincentjames501/fish-kill-on-port
-patrickf1/fzf.fish
-sagebind/tmux-zen
 ilancosman/tide@v5
 dracula/fish
+reitzig/sdkman-for-fish
+patrickf1/fzf.fish
+jethrokuan/z
+jhillyerd/plugin-git
+jorgebucaran/autopair.fish
