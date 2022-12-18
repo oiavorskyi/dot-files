@@ -10,3 +10,5 @@ brew_install launchbar --cask          # Productivity tool to launch apps and mo
 brew_install jetbrains-toolbox --cask  # JetBrains tools manager
 brew_install visual-studio-code --cask # Open-source code editor nice for k8s and web dev
 brew_install textexpander --cask       # Keyboard abbreviation manager
+brew tap homebrew/cask-drivers
+brew_install logitech-options          # Configuration tool for Logitech mouse
