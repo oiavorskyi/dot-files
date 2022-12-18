@@ -3,3 +3,4 @@ sensitive
 merged
 sensitive-preferences-backup.tgz
 *.swp
+.base-install.completed
