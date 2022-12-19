@@ -58,3 +58,34 @@ echo
 echo "Installing Web Dev tools"
 brew_install node   # NodeJS
 brew_install eslint # AST-based pattern checker for JavaScript
+
+# setting up checks for credentials in the git commits
+if [ ! -f $HOME/.local/bin ]; then
+    echo
+    echo "Setting up cred-alert"
+
+    # install cred-alert-cli
+    os_name=$(uname | awk '{print tolower($1)}')
+    curl -Ls -o cred-alert-cli \
+      https://github.com/pivotal-cf/cred-alert/releases/latest/download/cred-alert-cli_${os_name}
+    chmod 755 cred-alert-cli
+    mkdir -p "$HOME/.local/bin"
+    mv cred-alert-cli "$HOME/.local/bin"
+
+    HOOKS_DIRECTORY=$HOME/.git-hooks-vmware
+    if [ ! -d $HOOKS_DIRECTORY ]; then
+        echo
+        echo "Installing git hooks for cred-alert"
+        # for more information see https://github.com/pivotal-cf/git-hooks-core
+        git clone https://github.com/pivotal-cf/git-hooks-core $HOOKS_DIRECTORY
+        git config --global --add core.hooksPath $HOOKS_DIRECTORY
+    else
+        echo
+        echo "Updating git-hooks for cred-alert"
+        pushd $HOOKS_DIRECTORY
+        git pull -r
+        popd
+    fi
+else
+    echo "The cred-alert has been already setup"
+fi
