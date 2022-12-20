@@ -10,7 +10,7 @@ fish_config theme choose Dracula
 ###################################
 
 # Setup Go environment
-set -x GOPATH $HOME/go
+set -x GOPATH $HOME/workspace/go
 set -x GOROOT /opt/homebrew/opt/go/libexec
 if test ! -d $GOROOT
     echo "Unable to find Go distribution at $GOROOT."
