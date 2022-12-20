@@ -10,7 +10,7 @@ defaults write com.apple.dock workspaces-edge-delay -float 2.0
 killall Dock
 
 # enable HiDPI mode for external monitors (see https://www.alphr.com/hidpi-mode-os-x/)
-defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 
 # fast key repeat rate, requires reboot to take effect
 defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
