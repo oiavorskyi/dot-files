@@ -4,6 +4,6 @@ function kkd --description 'Dry run kubectl apply -k with color coding of the ou
         set src_dir .
     end
     kubectl apply -k $src_dir --dry-run=client -o yaml | \
-        yq 'del(.metadata.annotations."kubectl.kubernetes.io/last-applied-configuration")' - | \
+        yq 'del(.. | select(has("metadata")).metadata.annotations."kubectl.kubernetes.io/last-applied-configuration")' - | \
         bat -l yaml
 end
