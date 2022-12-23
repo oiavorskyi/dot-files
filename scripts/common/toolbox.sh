@@ -34,6 +34,7 @@ brew_install docker --cask # Pack, ship and run any application as a lightweight
 brew_install kubectl       # Kubernetes
 brew_install kubectx       # Tool that can switch between kubectl contexts easily and create aliases
 brew_install kustomize     # Template-free customization of Kubernetes YAML manifests
+brew_install helm          # Kubernetes package manager
 brew_install kind          # Run local Kubernetes cluster in Docker
 brew_install k9s           # Kubernetes CLI To Manage Your Clusters In Style!
 brew_install popeye        # A Kubernetes Cluster sanitizer and linter.
