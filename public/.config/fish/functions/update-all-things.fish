@@ -5,6 +5,6 @@ function update-all-things --description 'Updates apps and plugins installed wit
     fisher update
     if test -f $HOME/.config/tmux/plugins/tpm/bindings/update_plugins -a -n "$TMUX"
         echo "Updating tmux plugins"
-        $HOME/.config/tmux/plugins/tpm/bindings/update_plugins 
+        $HOME/.config/tmux/plugins/tpm/bindings/update_plugins all
     end
 end
