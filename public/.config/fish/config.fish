@@ -9,6 +9,8 @@ fish_config theme choose Dracula
 ### Setup environment and tools ###
 ###################################
 
+set -x EDITOR $HOMEBREW_PREFIX/bin/vim
+
 # Setup Go environment
 set -x GOPATH $HOME/workspace/go
 set -x GOROOT /opt/homebrew/opt/go/libexec
