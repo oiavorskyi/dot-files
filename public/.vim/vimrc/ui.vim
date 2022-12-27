@@ -7,6 +7,7 @@
 set termguicolors
 
 " Select preferred color scheme
+packadd! dracula
 colorscheme dracula
 
 " Enable syntax highlighting
