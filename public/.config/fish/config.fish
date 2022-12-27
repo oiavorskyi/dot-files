@@ -24,6 +24,9 @@ fish_add_path $GOPATH/bin $GOROOT/bin
 # Add my scripts to PATH
 fish_add_path $HOME/.local/bin
 
+# Add k8s plugin manager krew to PATH
+fish_add_path $HOME/.krew/bin
+
 # ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
 # This links Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=(brew --prefix openssl@1.1)"
