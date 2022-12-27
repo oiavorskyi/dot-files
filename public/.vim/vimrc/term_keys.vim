@@ -1,4 +1,3 @@
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings actual for teminal version of Vim only.
 " Includes mappings for plugins as well

@@ -6,11 +6,11 @@
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 " We need to set it up before sourcing any other files
-let mapleader = ";"
-let g:mapleader = ";"
+let mapleader = " "
+let g:mapleader = " "
 
 " Trick to enable double leader usage
-map ;; <leader><leader>
+" map ;; <leader><leader>
 
 " Quick save of the buffer
 nmap <leader>w :w<cr>
