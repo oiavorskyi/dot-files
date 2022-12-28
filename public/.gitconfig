@@ -1,7 +1,8 @@
 [core]
 	editor = /usr/local/bin/vim
 	autocrlf = input
-	pager = delta
+	pager = /opt/homebrew/bin/delta
+	hooksPath = /Users/oiavorskyi/.git-hooks-vmware
 [transfer]
 	fsckobjects = true
 [alias]
@@ -54,6 +55,7 @@
 [user]
 	name = Oleg Iavorskyi
 	email = oleg.iavorskyi@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGbEyEwhyveCoaSfqmPD4KkIA6E6YVUVj1MNmS2AS0ph
 [pull]
 	rebase = merges
 [rerere]
@@ -72,9 +74,15 @@
 [init]
 	defaultBranch = main
 [interactive]
-  diffFilter = delta --color-only
+    diffFilter = /opt/homebrew/bin/delta --color-only
 [delta]
-  navigate = true    # use n and N to move between diff sections
-  light = false      # set to true if you're in a terminal w/ a light background
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background
 [merge]
-  conflictstyle = diff3
+    conflictstyle = diff3
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
