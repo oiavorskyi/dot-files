@@ -3,8 +3,8 @@ function update-all-things --description 'Updates apps and plugins installed wit
     brew update && brew upgrade --cask && brew upgrade && brew cleanup
     echo "Updating Fish plugins"
     fisher update
-    if test -f $HOME/.config/tmux/plugins/tpm/bindings/update_plugins -a -n "$TMUX"
+    if test -f $HOME/.config/tmux/plugins/tpm/bin/update_plugins -a -n "$TMUX"
         echo "Updating tmux plugins"
-        $HOME/.config/tmux/plugins/tpm/bindings/update_plugins all
+        $HOME/.config/tmux/plugins/tpm/bin/update_plugins all
     end
 end
