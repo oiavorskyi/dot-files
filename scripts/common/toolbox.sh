@@ -13,6 +13,7 @@ brew_install peco                # Simplistic interactive filtering tool
 brew_install ripgrep             # Search tool like grep and The Silver Searcher
 brew_install httpie              # User-friendly cURL replacement (command-line HTTP client)
 brew_install jq                  # Lightweight and flexible command-line JSON processor
+brew_install jless               # Command-line pager for JSON data
 brew_install lnav                # Curses-based tool for viewing and analyzing log files
 brew_install the_silver_searcher # Code-search similar to ack
 brew_install tig                 # Text interface for Git repositories
