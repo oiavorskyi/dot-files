@@ -44,6 +44,7 @@ brew_install dive          # Tool for exploring each layer in a docker image
 brew_install kubeseal      # Kubernetes controller and tool for one-way encrypted Secrets
 brew_install yq            # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew_install stern         # Tail multiple Kubernetes pods & their containers
+brew_install tilt          # Define your dev environment as code. For microservice apps on Kubernetes
 brew tap farmotive/k8s
 brew_install kpoof         # Quick k8s pod port-forward utility
 brew tap vmware-tanzu/carvel
