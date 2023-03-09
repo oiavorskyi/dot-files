@@ -29,6 +29,7 @@ brew_install youtube-dl          # Download YouTube videos from the command-line
 brew_install make                # Utility for directing compilation
 brew_install shellcheck          # Static analysis and lint tool, for (ba)sh scripts
 brew_install bash                # Latest version of bash to replace MacOS default one
+brew_install pam_reattach        # Module to enable usage of TouchID for sudo within Tmux
 
 echo
 echo "Installing Container/Cloud/K8s tools"
