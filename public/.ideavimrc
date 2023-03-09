@@ -1,5 +1,21 @@
-source ~/.vim/vimrcs/shared_keys.vim
-set easymotion
+source ~/.vim/vimrc/shared_keys.vim
+"set easymotion
+
+set which-key
+set timeoutlen=5000
+set idearefactormode=keep
+
+set nu
+set rnu
 
 " Remap Idea keys to use together with Vim ones
 "nnoremap <C-W> :action EditorSelectWord<CR>
+
+" run with last configuration
+nnoremap <leader>r :action Run<CR>
+
+" run current context
+nnoremap <leader><leader>r :action ContextRun<CR>
+
+" go to related symbol
+nnoremap gs :action GotoRelated<CR>
