@@ -1,5 +1,5 @@
 [core]
-	editor = /usr/local/bin/vim
+	editor = /opt/homebrew/bin/vim
 	autocrlf = input
 	pager = /opt/homebrew/bin/delta
 	hooksPath = /Users/oiavorskyi/.git-hooks-vmware
@@ -86,3 +86,5 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+[url "git@gitlab.eng.vmware.com:"]
+    insteadOf = https://gitlab.eng.vmware.com/
