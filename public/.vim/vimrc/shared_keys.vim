@@ -9,12 +9,6 @@
 let mapleader = " "
 let g:mapleader = " "
 
-" Trick to enable double leader usage
-" map ;; <leader><leader>
-
-" Quick save of the buffer
-nmap <leader>w :w<cr>
-
 " Remove highlighting from search results
 nnoremap <silent> <leader><cr> :nohlsearch<cr>
 
@@ -32,12 +26,12 @@ map <S-right> 3<C-w><
 nmap vv <C-w>v
 
 " Treat long lines as break lines (useful when moving around in them)
-map j gj
-map k gk
+" map j gj
+" map k gk
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text editing
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Split line at the cursor with K
-nmap K i<cr><esc>
+" nmap K i<cr><esc>
