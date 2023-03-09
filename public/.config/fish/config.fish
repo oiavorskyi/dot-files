@@ -11,6 +11,8 @@ fish_config theme choose Dracula
 
 set -x EDITOR $HOMEBREW_PREFIX/bin/vim
 
+set -x BAT_THEME Dracula
+
 # Setup Go environment
 set -x GOPATH $HOME/workspace/go
 set -x GOROOT /opt/homebrew/opt/go/libexec
@@ -20,6 +22,7 @@ if test ! -d $GOROOT
     set -x GOROOT (brew --prefix golang)/libexec
 end
 fish_add_path $GOPATH/bin $GOROOT/bin
+set -x GOPRIVATE "*.vmware.com"
 
 # Add my scripts to PATH
 fish_add_path $HOME/.local/bin
@@ -30,3 +33,6 @@ fish_add_path $HOME/.krew/bin
 # ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
 # This links Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=(brew --prefix openssl@1.1)"
+
+# Add Postgres binaries to the path
+fish_add_path $HOMEBREW_PREFIX/opt/libpq/bin
