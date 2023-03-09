@@ -3,7 +3,7 @@
 ###############################
 
 # Select preferred theme
-fish_config theme choose Dracula
+fish_config theme choose "Dracula Official"
 
 ###################################
 ### Setup environment and tools ###
