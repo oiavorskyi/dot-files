@@ -20,7 +20,7 @@ brew_install tig                 # Text interface for Git repositories
 brew_install tree                # Display directories as trees (with optional color/HTMLjoutput)
 brew_install watch               # Executes a program periodically, showing output fullscreen
 brew_install wget                # Internet file retriever
-brew_install exa                 # Modern replacement for 'ls'
+brew_install eza                 # Modern replacement for 'ls'
 brew_install gh                  # GitHub command-line tool
 brew_install gnu-tar             # GNU version of the tar archiving utility
 brew_install mkcert              # Simple tool to make locally trusted development certificates
@@ -32,6 +32,7 @@ brew_install bash                # Latest version of bash to replace MacOS defau
 brew_install pam_reattach        # Module to enable usage of TouchID for sudo within Tmux
 brew tap batchcorp/public
 brew_install plumber             # A swiss army knife CLI tool for interacting with Kafka, RabbitMQ and other messaging systems.
+brew_install d2                  # Modern diagram scripting language that turns text to diagrams 
 
 echo
 echo "Installing Container/Cloud/K8s tools"

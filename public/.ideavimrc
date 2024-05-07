@@ -1,5 +1,17 @@
 source ~/.vim/vimrc/shared_keys.vim
-"set easymotion
+set easymotion
+
+nmap <leader><leader>f <Plug>(easymotion-bd-fl)
+nmap <leader><leader>F <Plug>(easymotion-bd-f)
+nmap <leader><leader>t <Plug>(easymotion-bd-tl)
+nmap <leader><leader>T <Plug>(easymotion-bd-t)
+nmap <leader><leader>w <Plug>(easymotion-bd-wl)
+nmap <leader><leader>W <Plug>(easymotion-bd-w)
+nmap <leader><leader>b <Plug>(easymotion-bl)
+nmap <leader><leader>B <Plug>(easymotion-b)
+nmap <leader><leader>e <Plug>(easymotion-bd-el)
+nmap <leader><leader>E <Plug>(easymotion-bd-e)
+nmap <leader><leader>l <Plug>(acejump-linemarks)
 
 set which-key
 set timeoutlen=5000
